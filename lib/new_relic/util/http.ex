@@ -43,7 +43,7 @@ defmodule NewRelic.Util.HTTP do
   """
   def http_options(opts \\ []) do
     [
-      connect_timeout: 2000,
+      connect_timeout: 4000,
       ssl: [
         verify: :verify_peer,
         cacertfile: CAStore.file_path(),
